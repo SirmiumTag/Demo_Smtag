@@ -1,0 +1,120 @@
+@font-face{
+  font-family: "Montserrat";
+  src:url("fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+  font-family: "Montserrat-Medium";
+  src:url("fonts/Montserrat-Medium.ttf");
+}
+@font-face{
+  font-family: "Montserrat-Bold";
+  src:url("fonts/Montserrat-Bold.ttf");
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  /*background-image: url("https://images.wallpaperscraft.com/image/spider_web_close_up_drops_112967_1920x1080.jpg");*/
+  background-image: url("https://i.pinimg.com/originals/99/4a/1b/994a1b8b68e077683ed412d98d54d58e.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Montserrat;
+}
+nav{
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.navbar{
+  border-radius: 4px;
+}
+.navbar-brand img{
+  width: 50%;
+  margin-top: -7%;
+}
+.header{
+  max-width: 1024px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+.header button{
+  background-color: #222;
+  transition: 0.3s;
+  margin-top: 8%;
+  font-size: 1.1em;
+  padding: 9px 25px 9px 25px;
+}
+.header button:hover{
+  color:#222;
+  background-color: white;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+}
+.header a:hover{
+  text-decoration:none;
+}
+.header h1{
+  margin-bottom: 6%;
+  font-family: Montserrat-Bold;
+  font-size: 4em;
+}
+.caret{
+  transform: rotate(-90deg);
+}
+.page1{
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.page1 h1{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.page1 img{
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  transition: 0.4s
+}
+.page1 img:hover{
+  transform: rotate(180deg);
+}
+.page1 p{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.page1 hr{
+  width: 40%;
+
+}
+footer{
+  background-color: #222;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: white;
+}
+footer img{
+  width: 60px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 40px;
+  transition: 0.4s;
+}
+footer img:hover{
+  transform: rotate(180deg);
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: white;
+}
+.copyright{
+  text-align: center;
+}
