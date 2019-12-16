@@ -19,6 +19,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   font-family: Montserrat;
+  font-size: 1.6em;
 }
 nav{
   margin: 0 auto;
@@ -58,8 +59,8 @@ nav{
 }
 .header h1{
   margin-bottom: 6%;
-  font-family: Montserrat-Bold;
-  font-size: 4em;
+  font-weight: bold;
+  font-size: 3.8em;
 }
 .caret{
   transform: rotate(-90deg);
@@ -87,6 +88,7 @@ nav{
 .page1 p{
   padding-left: 20%;
   padding-right: 20%;
+  text-align: center;
 }
 .page1 hr{
   width: 40%;
