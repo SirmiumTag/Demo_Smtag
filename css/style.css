@@ -1,4 +1,4 @@
-@font-face{
+@font-face{ /*Import font. Also import medium and bold variants bellow*/
   font-family: "Montserrat";
   src:url("fonts/Montserrat-Regular.ttf");
 }
@@ -11,55 +11,47 @@
   src:url("fonts/Montserrat-Bold.ttf");
 }
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*smooth scrolling when you click a link*/
 }
 body{
-  background-image: url("../img/bgr.jpg");
+  background-image: url("../img/bgr.jpg"); /*background image*/
   background-size: cover;
-  background-attachment: fixed;
-  font-family: Montserrat;
-  font-size: 1.6em;
+  background-attachment: fixed; /*fixed background when scrolling*/
+  font-family: Montserrat; /*set font*/
+  font-size: 1.6em; /*set font size. em- relative to the font-size of the element*/
 }
 nav{
-  margin: 0 auto;
-  max-width: 1024px;
+  margin: 0 auto; /*center using margins. Margin- empty space outside lement*/
+  max-width: 1024px; /*can be smaller but not bigger*/
 }
 .navbar{
-  border-radius: 4px;
-  box-shadow: -7px 7px 8px 0px rgba(0,0,0,0.30);
+  border-radius: 4px; /*rounding of the corners*/
+  box-shadow: -7px 7px 8px 0px rgba(0,0,0,0.30); /*semi-transparent shadow, cssmatic.com/box-shadow*/
 }
-nav li:hover{
-  background-color: #151515;
+nav li:hover{ /*change style on hover*/
+  background-color: #151515; /*set background color to darker gray*/
 }
-.navbar-brand img{
-  width: 50%;
-  margin-top: -7%;
+.navbar-brand img{ /*logo in nav*/
+  width: 50%; /*make logo small enough*/
+  margin-top: -7%; /*aligns image verticaly*/
 }
 .navbar-brand img:hover{
-  opacity: 0.85;
-}
-@keyframes slidel {
-  0% { transform:translateX(-100%); }
-  20% { transform:translateX(6%); }
-  40% { transform:translateX(-4%); }
-  60% { transform:translateX(2%); }
-  80% { transform:translateX(-1%); }
-  100% { transform:translateX(0%); }
+  opacity: 0.85; /*make logo semi-transparent*/
 }
 .header{
   max-width: 1024px;
   margin: 0 auto;
-  color: white;
-  padding-top: 150px;
+  color: white; /*text-color*/
+  padding-top: 150px; /*padding- empty space inside elemnt.*/
   padding-bottom: 80px;
-  animation: slidel 2s 1;
+  animation: slidel 2s 1; /*my custom keyframe animation, lasts 2s, runs once. Explained later*/
 }
 .header button{
-  background-color: #222;
-  transition: 0.3s;
+  background-color: #222; /*same color as nav*/
+  transition: 0.3s; /*transition duration for style changes with :hover or :active*/
   margin-top: 8%;
   font-size: 1.1em;
-  padding: 9px 25px 9px 25px;
+  padding: 9px 25px 9px 25px; /*top, right, bottom, left*/
 }
 .header button:hover{
   color:#222;
@@ -67,18 +59,18 @@ nav li:hover{
 }
 .header a{
   color: white;
-  text-decoration: none;
+  text-decoration: none; /*remove text decoration from links*/
 }
 .header a:hover{
   text-decoration:none;
 }
 .header h1{
   margin-bottom: 6%;
-  font-weight: bold;
+  font-weight: bold; /*make text bold*/
   font-size: 3.8em;
 }
-.caret{
-  transform: rotate(-90deg);
+.caret{ /*down-pointing arrow on Explore button*/
+  transform: rotate(-90deg); /*rotate it by 90 degrees clockwise*/
 }
 .page1{
   background-color: white;
@@ -86,15 +78,15 @@ nav li:hover{
   padding-bottom: 80px;
 }
 .page1 h1{
-  text-align: center;
+  text-align: center; /*center text*/
   margin-bottom: 25px;
 }
 .page1 img{
-  height: 100px;
+  height: 100px; /*set height of an element*/
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 20px;
-  display: flex;
+  display: flex; /*flexbox layout module, makes container flexible, see more: css-tricks.com/snippets/css/a-guide-to-flexbox*/
   transition: 0.4s
 }
 .page1 img:hover{
@@ -118,7 +110,7 @@ hr{
   text-align: center;
 }
 .cont form{
-  margin-top: 5vh;
+  margin-top: 5vh; /*vh- viewport width unit. See more: sitepoint.com/css-viewport-units-quick-start*/
   margin-bottom: 5vh;
 }
 .cont input, textarea{
@@ -128,8 +120,8 @@ hr{
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  resize: vertical;
+  border: 1px solid #ccc; /*sets the border around element*/
+  resize: vertical; /*allow the user to resize textarea verticaly but not horisontaly*/
 }
 .cont textarea{
   height: 15vh;
@@ -150,15 +142,8 @@ hr{
   margin: 0 auto;
   padding-top: 12vh;
 }
-@keyframes tilt{
-   0% { transform: rotate(0deg); }
-   25% { transform: rotate(10deg); }
-   50% { transform: rotate(-10deg); }
-   75% { transform: rotate(10deg); }
-   100% { transform: rotate(0deg); }
-}
 .cont .contactimg:hover{
-  animation: tilt 1s infinite;
+  animation: tilt 1s infinite; /*custom keyframe animation, lasts 1s, runs forever*/
 }
 .cont p{
   text-align: center;
@@ -182,7 +167,7 @@ hr{
   text-align: center;
 }
 .tabl hr{
-  border-color: #222;
+  border-color: #222; /*sets the color of the table border*/
   opacity: 0.15;
 }
 .tabl table{
@@ -191,7 +176,7 @@ hr{
   transition: 0.3s;
 }
 .tabl table:hover{
-  box-shadow: -7px 7px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: -7px 7px 32px 0px rgba(0,0,0,0.75); /*blur radius doubles*/
 }
 .tabl caption{
   font-size: 18px;
@@ -200,7 +185,7 @@ hr{
 .tabl thead th{
   background: #4ba9c8;
   color: #fff;
-  font-weight: initial;
+  font-weight: initial; /*sets font-weight to its default value*/
 }
 .tabl tr{
   background: #f1f1f1;
@@ -212,29 +197,24 @@ hr{
   text-align: left;
   padding: 24px;
 }
-@keyframes point{
-   0% { transform:translateX(0%); }
-   50% { transform:translateX(-8%); }
-   100% { transform:translateX(0%); }
-}
 .tabl img{
   max-width: 80%;
   margin-top: 90px;
   display: flex;
 }
 .tabl img:hover{
-  animation: point 0.8s infinite;
+  animation: point 0.8s infinite; /*Custom keyframe animation, lasts 0.8s, runs forever*/
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px){ /*media tag- change style on certain resolutions*/
   .navbar{
-    box-shadow: none;
+    box-shadow: none; /*removes box shadow*/
   }
   .tabl img{
     transform: rotate(90deg);
     margin: 0 auto;
     margin-top: 100px;
   }
-  @keyframes point{}
+  @keyframes point{} /*removes custom keyframe animation*/
 }
 footer{
   background-color: #222;
@@ -261,4 +241,30 @@ footer a:hover{
 }
 .copyright{
   text-align: center;
+}
+
+/*The @keyframes rule specifies the animation code.
+The animation is created by gradually changing from one set of CSS styles to another.
+During the animation, you can change the set of CSS styles many times.
+Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.*/
+
+@keyframes slidel { /*element slides in from left, then bounces left-right and gradually stops*/
+  0% { transform:translateX(-100%); }
+  20% { transform:translateX(6%); }
+  40% { transform:translateX(-4%); }
+  60% { transform:translateX(2%); }
+  80% { transform:translateX(-1%); }
+  100% { transform:translateX(0%); }
+}
+@keyframes tilt{ /*element tilts to the right, then left, then right again*/
+   0% { transform: rotate(0deg); }
+   25% { transform: rotate(10deg); }
+   50% { transform: rotate(-10deg); }
+   75% { transform: rotate(10deg); }
+   100% { transform: rotate(0deg); }
+}
+@keyframes point{ /*element moves to the left then returns back to its starting position*/
+   0% { transform:translateX(0%); }
+   50% { transform:translateX(-8%); }
+   100% { transform:translateX(0%); }
 }
