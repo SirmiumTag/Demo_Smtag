@@ -26,7 +26,7 @@ nav{
 }
 .navbar{
   border-radius: 4px;
-    box-shadow: -7px 7px 8px 0px rgba(0,0,0,0.40);
+  box-shadow: -7px 7px 8px 0px rgba(0,0,0,0.30);
 }
 nav li:hover{
   background-color: #151515;
@@ -226,6 +226,9 @@ hr{
   animation: point 0.8s infinite;
 }
 @media only screen and (max-width:767px){
+  .navbar{
+    box-shadow: none;
+  }
   .tabl img{
     transform: rotate(90deg);
     margin: 0 auto;
