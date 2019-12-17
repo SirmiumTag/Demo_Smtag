@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> <!--lang- specifies the base language, dir- Left-to-right text.-->
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"> <!--standard character encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--sets the width of the page to follow the screen-width of the device, sets the initial zoom level-->
     <title>Demo website</title>
-     <link rel="shortcut icon" href="./img/demo-logo.png"/>
+     <link rel="shortcut icon" href="./img/demo-logo.png"/> <!--Shortcut icon-->
+     <!--Bootstrap files: -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css"> <!--our css file-->
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+<!--Navigation: -->
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!--BS navigation, dark theme, fixed to the top-->
+      <div class="container-fluid"> <!--Container-fluid- max-width: 100%. Regular container- has fixed width that you set-->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demoNav">
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demoNav"> <!--Mobile hamburger-->
+            <span class="icon-bar"></span> <!--flat horisontal line-->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#"> <!--logo in navigation-->
             <img src="./img/demo-logo.png">
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="demoNav">
+        <div class="collapse navbar-collapse" id="demoNav"> <!--Links in navigation. Collapse on mobile-->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
-            <li><a href="#one">Page one</a></li>
+            <li><a href="#one">Page one</a></li> <!--lnik leads to page section with coresponding id-->
             <li><a href="#two">Page two</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
@@ -35,21 +38,23 @@
       </div>
     </nav>
 
+<!--Header(bellow nav): -->
     <div class="container-fluid header">
-      <div class="row">
+      <div class="row"> <!--Bootstrap grid system, each row has 12 columns-->
         <div class="col-sm-6">
           <h1>Welcome to Demo website!</h1>
           <p>This is a demo website/presentation for 'Sirmium tag' made by Branislav Vucenovic using Bootstrap framewok.</p>
           <p>Hope you like it.</p>
-          <a href="#one"><button type="button" class="btn">Explore <span class="caret"></span></button></a>
+          <a href="#one"><button type="button" class="btn">Explore <span class="caret"></span></button></a> <!--Caret- down arrow, rotate it in css to point right. Btn- bs standard button class-->
         </div>
         <div class="col-sm-6">
-
+          <!--Empty space on the right-->
         </div>
       </div>
     </div>
 
-    <div class="container-fluid page1" id="one">
+<!--First page: -->
+    <div class="container-fluid page1" id="one"> <!--Use id as a target for nav link-->
       <h1>First page title</h1>
       <hr>
       <div class="container">
@@ -73,23 +78,24 @@
       </div>
     </div>
 
+<!--Second page: -->
     <div class="container-fluid tabl" id="two">
       <h1>Second page</h1>
       <hr>
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <table>
-              <thead>
-                <tr>
-                  <th>Turtle</th>
+            <table> <!--create a table-->
+              <thead> <!--table header-->
+                <tr> <!--table row-->
+                  <th>Turtle</th> <!--header cell-->
                   <th>Color</th>
                   <th>Weapon</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody> <!--table body-->
                 <tr>
-                  <td>Leonardo</td>
+                  <td>Leonardo</td> <!--standard cell-->
                   <td>Blue</td>
                   <td>Ninjato</td>
                 </tr>
@@ -118,37 +124,38 @@
       </div>
     </div>
 
+<!--Contact: -->
     <div class="container-fluid cont" id="contact">
       <h1>Contact us</h1>
       <hr>
       <div class="container">
         <div class="row">
           <div class="col-sm-1">
-
+            <!--Empty space on the left-->
           </div>
           <div class="col-sm-5">
-            <form action="action_page.php">
-              <label for="fn">First Name</label>
-              <input type="text" id="fn" name="firstname" placeholder="Your first name...">
+            <form action="example_page.php"> <!--contact form. Submited data would be sent to this php page(if it existed) for processing-->
+              <label for="fn">First Name</label> <!--label-->
+              <input type="text" id="fn" name="firstname" placeholder="Your first name..."> <!--text box-->
               <label for="ln">Last Name</label>
               <input type="text" id="ln" name="lastname" placeholder="Your last name...">
               <label for="subject">Subject</label>
-              <textarea id="message" name="message" placeholder="Your message goes here..."></textarea>
+              <textarea id="message" name="message" placeholder="Your message goes here..."></textarea> <!--text area-->
               <button type="submit" name="submit" class="btn">Send</button>
             </form>
           </div>
           <div class="col-sm-5">
             <img src="./img/contact.png" class="contactimg">
-            <p class="margin"><a href="mailto:badzo997@gmai.com">badzo997@gmail.com</a></p>
+            <p class="margin"><a href="mailto:badzo997@gmai.com">badzo997@gmail.com</a></p><!--send mail through your email client to badzo997@gmail.com-->
           </div>
           <div class="col-sm-1">
-
+            <!--Empty space on the right-->
           </div>
         </div>
       </div>
     </div>
 
-
+<!--Footer: -->
     <footer>
       <div class="container-fluid">
         <div class="row">
