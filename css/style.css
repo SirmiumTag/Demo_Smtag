@@ -44,7 +44,7 @@ nav li:hover{ /*change style on hover*/
   color: white; /*text-color*/
   padding-top: 150px; /*padding- empty space inside elemnt.*/
   padding-bottom: 80px;
-  animation: slidel 5s 1; /*my custom keyframe animation, lasts 2s, runs once. Explained later*/
+  animation: slidel 4s 1; /*my custom keyframe animation, lasts 4s, runs once. Explained later*/
 }
 .header button{
   background-color: #222; /*same color as nav*/
@@ -236,11 +236,11 @@ footer a:hover{
 
 @keyframes slidel { /*element slides in from left, then bounces left-right and gradually stops*/
   0% { transform:translateX(-100%); }
-  50%{ transform:translateX(-100%); }
-  60% { transform:translateX(6%); }
-  70% { transform:translateX(-4%); }
-  80% { transform:translateX(2%); }
-  90% { transform:translateX(-1%); }
+  45%{ transform:translateX(-100%); }
+  55% { transform:translateX(4%); }
+  65% { transform:translateX(-2%); }
+  75% { transform:translateX(1%); }
+  85% { transform:translateX(-1%); }
   100% { transform:translateX(0%); }
 }
 @keyframes tilt{ /*element tilts to the right, then left, then right again*/
