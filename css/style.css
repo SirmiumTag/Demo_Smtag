@@ -205,17 +205,6 @@ hr{
 .tabl img:hover{
   animation: point 0.8s infinite; /*Custom keyframe animation, lasts 0.8s, runs forever*/
 }
-@media only screen and (max-width:767px){ /*media tag- change style on certain resolutions*/
-  .navbar{
-    box-shadow: none; /*removes box shadow*/
-  }
-  .tabl img{
-    transform: rotate(90deg);
-    margin: 0 auto;
-    margin-top: 100px;
-  }
-  @keyframes point{} /*removes custom keyframe animation*/
-}
 footer{
   background-color: #222;
   padding-top: 50px;
@@ -264,4 +253,18 @@ footer a:hover{
    0% { transform:translateX(0%); }
    50% { transform:translateX(-8%); }
    100% { transform:translateX(0%); }
+}
+
+/*With media queries you can change styles at different screen sizes(breakpoints). See more: w3schools.com/css/css_rwd_mediaqueries.asp*/
+
+@media only screen and (max-width:767px){
+  .navbar{
+    box-shadow: none; /*removes box shadow*/
+  }
+  .tabl img{
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  @keyframes point{} /*removes custom keyframe animation*/
 }
