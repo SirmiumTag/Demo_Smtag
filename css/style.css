@@ -263,10 +263,12 @@ footer a:hover{
     box-shadow: none; /*removes box shadow*/
   }
   .tabl img{
-    display:none;
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 100px;
   }
   .tabl table{
-    display:none;
+    display: none;
   }
   @keyframes point{} /*removes custom keyframe animation*/
 }
