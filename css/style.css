@@ -261,6 +261,7 @@ footer a:hover{
 @media only screen and (max-width:767px){
   .navbar{
     box-shadow: none; /*removes box shadow*/
+    border-radius: 0px; /*removes rounded corners*/
   }
   .tabl img{
     transform: rotate(90deg);
