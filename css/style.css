@@ -16,6 +16,8 @@ html{
 body{
   background-image: url("../img/bgr.jpg"); /*background image*/
   background-size: cover;
+  max-height: 300%; /*needed to prevent pixelated background image on mobile*/
+  max-width: 300%; /* -||- */
   background-attachment: fixed; /*fixed background when scrolling*/
   font-family: Montserrat; /*set font*/
   font-size: 1.6em; /*set font size. em- relative to the font-size of the element*/
