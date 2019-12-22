@@ -259,9 +259,6 @@ footer a:hover{
 /*With media queries you can change styles at different screen sizes(breakpoints). See more: w3schools.com/css/css_rwd_mediaqueries.asp*/
 
 @media only screen and (max-width:767px){
-  body{
-    background-size: 100%;
-  }
   .navbar{
     box-shadow: none; /*removes box shadow*/
     border-radius: 0px; /*removes rounded corners*/
@@ -272,4 +269,9 @@ footer a:hover{
     margin-top: 100px;
   }
   @keyframes point{} /*removes custom keyframe animation*/
+}
+@media only screen and (max-width:600px){
+  body{
+    background-image: url("../img/bgr_m.jpg");
+  }
 }
