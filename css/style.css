@@ -16,8 +16,6 @@ html{
 body{
   background-image: url("../img/bgr.jpg"); /*background image*/
   background-size: cover;
-  max-height: 300%; /*needed to prevent pixelated background image on mobile*/
-  max-width: 300%; /* -||- */
   background-attachment: fixed; /*fixed background when scrolling*/
   font-family: Montserrat; /*set font*/
   font-size: 1.6em; /*set font size. em- relative to the font-size of the element*/
@@ -261,6 +259,9 @@ footer a:hover{
 /*With media queries you can change styles at different screen sizes(breakpoints). See more: w3schools.com/css/css_rwd_mediaqueries.asp*/
 
 @media only screen and (max-width:767px){
+  body{
+    background-size: 100%;
+  }
   .navbar{
     box-shadow: none; /*removes box shadow*/
     border-radius: 0px; /*removes rounded corners*/
